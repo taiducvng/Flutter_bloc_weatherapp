@@ -8,7 +8,7 @@ class FetchWeather {
   Future<WeatherData?> getWeather(String query) async {
     try {
       var url = Uri.parse(
-          'https://api.openweathermap.org/data/2.5/weather?q=$query&appid=704139945b46734a7d4d7ed879694738');
+          'https://api.openweathermap.org/data/2.5/weather?q=$query&appid=446b3ae88ecde3f75c85f92b83e53753');
       var response = await http.get(url);
       if (response.statusCode == 200) {
         var decoded = json.decode(response.body);
